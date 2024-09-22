@@ -1,6 +1,6 @@
 DC = docker compose -p solidjs-frontend
 SOLIDJS_FILE_DEVELOPMENT = docker/development.yaml
-SOLIDJS_FILE_PRODUCTION = docker/prod.yaml
+SOLIDJS_FILE_PRODUCTION = docker/production.yaml
 
 SOLIDJS_CONTAINER = frontend
 
