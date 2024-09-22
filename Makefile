@@ -31,7 +31,7 @@ app-logs:
 
 .PHONY: lint
 lint:
-	npm run check:code:fix && lint:styles:fix
+	yarn run check:code:fix && lint:styles:fix
 
 .PHONY: check
 check:
