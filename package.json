@@ -1,0 +1,39 @@
+{
+    "name": "template-solidjs-frontend",
+    "version": "0.0.0",
+    "private": true,
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite --host 0.0.0.0",
+        "preview": "vite preview",
+        "start": "vite",
+        "typecheck": "tsc --noEmit",
+        "typecheck:watch": "tsc --noEmit --watch",
+        "check:code": "yarn biome check .",
+        "check:code:fix": "yarn biome check . --write",
+        "lint:code": "yarn biome lint .",
+        "lint:code:fix": "yarn biome lint . --write --unsafe",
+        "lint:styles": "yarn stylelint **/*.{scss,css}",
+        "lint:styles:fix": "yarn stylelint **/*.{scss,css} --fix"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.9.2",
+        "clsx": "2.1.1",
+        "sass": "1.79.3",
+        "stylelint": "16.9.0",
+        "stylelint-config-recommended": "14.0.1",
+        "stylelint-config-standard-scss": "13.1.0",
+        "stylelint-order": "6.0.4",
+        "stylelint-scss": "6.7.0",
+        "typescript": "5.6.2",
+        "vite": "5.4.7",
+        "vite-plugin-copy": "0.1.6",
+        "vite-plugin-solid": "2.10.2"
+    },
+    "dependencies": {
+        "@solidjs/router": "0.14.5",
+        "solid-js": "1.8.22"
+    }
+}

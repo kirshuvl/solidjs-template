@@ -1,0 +1,86 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+    "files": {
+        "include": ["*.tsx", "*.ts", "*.js", "*.json"],
+        "ignore": ["./dist", "./node_modules", ".husky", "docs", "gen", "*.gen.ts", "*.d.ts"]
+    },
+    "vcs": {
+        "defaultBranch": "dev",
+        "useIgnoreFile": true,
+        "enabled": true,
+        "clientKind": "git"
+    },
+    "organizeImports": {
+        "enabled": true,
+        "ignore": ["./gen"]
+    },
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 108,
+        "ignore": []
+    },
+    "javascript": {
+        "formatter": {
+            "semicolons": "asNeeded",
+            "quoteStyle": "single",
+            "enabled": true,
+            "jsxQuoteStyle": "double",
+            "arrowParentheses": "always",
+            "trailingCommas": "none"
+        }
+    },
+    "linter": {
+        "ignore": ["*.scss", "*.md", ".DS_Store", "*.svg", "*.d.ts"],
+        "enabled": true,
+        "rules": {
+            "all": true,
+            "complexity": {
+                "noForEach": "off",
+                "useOptionalChain": "warn",
+                "useLiteralKeys": "off",
+                "noExcessiveCognitiveComplexity": "off"
+            },
+            "correctness": {
+                "useHookAtTopLevel": "off",
+                "useImportExtensions": "off",
+                "noUndeclaredDependencies": "off"
+            },
+            "a11y": {
+                "useHeadingContent": "off",
+                "useKeyWithClickEvents": "off",
+                "useKeyWithMouseEvents": "off",
+                "useAnchorContent": "off",
+                "useValidAnchor": "off",
+                "useMediaCaption": "off",
+                "useAltText": "off",
+                "useButtonType": "off",
+                "noRedundantAlt": "off",
+                "noSvgWithoutTitle": "off",
+                "noLabelWithoutControl": "off"
+            },
+            "nursery": {
+                "useImportRestrictions": "off"
+            },
+            "performance": {
+                "noBarrelFile": "off"
+            },
+            "style": {
+                "noNonNullAssertion": "off",
+                "noNamespaceImport": "warn",
+                "useBlockStatements": "off",
+                "noImplicitBoolean": "off",
+                "useNamingConvention": "off",
+                "useImportType": "off",
+                "noDefaultExport": "off",
+                "useFilenamingConvention": "off",
+                "useExplicitLengthCheck": "off"
+            },
+            "suspicious": {
+                "noConsole": "off",
+                "noConsoleLog": "off",
+                "noAssignInExpressions": "off"
+            }
+        }
+    }
+}
