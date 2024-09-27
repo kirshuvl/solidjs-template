@@ -71,7 +71,7 @@
                 "useBlockStatements": "off",
                 "noImplicitBoolean": "off",
                 "useNamingConvention": "off",
-                "useImportType": "off",
+                "useImportType": "warn",
                 "noDefaultExport": "off",
                 "useFilenamingConvention": "off",
                 "useExplicitLengthCheck": "off"

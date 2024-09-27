@@ -1,5 +1,5 @@
 {
-    "name": "template-solidjs-frontend",
+    "name": "itpolygon-frontend-ui",
     "version": "0.0.0",
     "private": true,
     "license": "MIT",
@@ -20,6 +20,7 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^1.9.2",
+        "@types/node": "^22.7.3",
         "clsx": "^2.1.1",
         "postcss": "^8.4.29",
         "sass": "^1.79.3",
